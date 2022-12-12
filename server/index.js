@@ -8,7 +8,7 @@ const { Posting } = require("./models/Posting");
 const cors = require("cors");
 
 let corsOption = {
-  origin: "https://server.bittersweet.tk",
+  origin: "https://bittersweet.tk",
   credentials: true,
 };
 
