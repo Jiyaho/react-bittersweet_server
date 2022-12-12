@@ -14,10 +14,6 @@ let corsOption = {
 
 app.use(cors(corsOption));
 
-app.use((req, res) => {
-  res.header("Access-Control-Allow-Origin", "https://bittersweet.tk");
-});
-
 app.use(express.json());
 //"application/json" 형식의 데이터를 parse해 줌
 app.use(express.urlencoded({ extended: true }));
