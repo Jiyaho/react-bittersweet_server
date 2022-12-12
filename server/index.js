@@ -7,11 +7,12 @@ const { auth } = require("./middleware/auth");
 const { Posting } = require("./models/Posting");
 const cors = require("cors");
 
+//CORS ISSUE
+const clientURL = ["https://bittersweet.tk", "https://www.bittersweet.tk"];
 let corsOption = {
-  origin: "https://bittersweet.tk",
+  origin: clientURL,
   credentials: true,
 };
-
 app.use(cors(corsOption));
 
 app.use(express.json());
