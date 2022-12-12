@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.get("/", (req, res) => res.send("Hello World!!!"));
+app.get("/", (req, res) => res.send("Hello World!! checked"));
 
 const mongoose = require("mongoose");
 mongoose
